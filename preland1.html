@@ -661,11 +661,21 @@
             <a class="popup_btn" href="https://beautiful-space.tk/flexio-pt/"> Pedir o Flexio</a>
         </div>
     </div>
-    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
-    <script type="text/javascript" src="js/dr-dtime.min.js"></script>
-    <script src="js/script.js"></script>
+    <script type="text/javascript" src="js-preland1/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js-preland1/dr-dtime.min.js"></script>
+    <script src="js-preland1/script.js"></script>
     <a href="https://beautiful-space.tk/flexio-pt/" class="integration-helper" style="display:none;"></a>
     
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+           Array.prototype.forEach.call(document.querySelectorAll('a'), function (item) {
+              item.setAttribute('href', item.getAttribute('href') + location.search);
+           })
+        });
+      
+      </script>
 
 </body>
 
